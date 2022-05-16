@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_5</title>
+</head>
+<body>
+    <h1>Print the next 20 leap years </h1>
+    
+    <script>
+    
+       var year = window.prompt(" Enter Leap year: ");
+       
+       var counter = 20;
+
+       // Method Calling
+       
+       calculateLeapYear(year, counter);  
+
+       function calculateLeapYear(year, counter) {
+
+         while (counter >= 0) {
+
+           // Check Leap Year
+             if ((year % 4 === 0) && (year % 100 !== 0)||(year % 400 === 0)) {
+
+                 document.write(year + "<br>");
+
+                 year++;
+
+                 counter--;
+             } 
+             else {
+               year++;
+             }   
+
+          }
+
+       }
+
+    </script>
+    
+</body>
+</html>
