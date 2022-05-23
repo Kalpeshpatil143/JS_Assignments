@@ -16,15 +16,23 @@
                     
           const listNo = [1,3,5,2,4];
           
-          function find(listNo, isEven){
-          
-          
-          }
+          function find(listNo, isEven)
+          {
+              var i;
+              for(i=0;i<listNo.length;i++){
+                  if(isEven(listNo[i]))
+                  {
+                      return listNo[i];
+                      break;
+                  }
+              }
          
           // function to Check Even Numbers
           function isEven(num){ 
               return((num%2) == 0);
           }
+	x=find(listNo,isEven)
+          document.write(x)
           
      </script>
     </body>
